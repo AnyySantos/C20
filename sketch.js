@@ -19,17 +19,17 @@ function preload(){
 }
 
 function setup(){
-  
+  //1 Adicione o código para ajustar os tamanhos da janela do jogo com base no dispositivo atual:
   createCanvas(400,600);
-// Movendo plano de fundo
-path=createSprite(200,200);
+//2  Movendo plano de fundo
+path=createSprite(  ,   );
 path.addImage(pathImg);
-path.velocityY = 4;
+path.velocityY =  ;
 
 
-//criar menino correndo 
-boy = createSprite(70,580,20,20);
-boy.addAnimation("SahilRunning",boyImg);
+// criar menino correndo 
+
+
 boy.scale=0.08;
   
   
@@ -50,9 +50,9 @@ function draw() {
   boy.collide(edges);
   
   //código para redefinir plano de fundo
-  if(path.y > 400 ){
-    path.y = height/2;
-  }
+
+
+    
   
     createCash();
     createDiamonds();
